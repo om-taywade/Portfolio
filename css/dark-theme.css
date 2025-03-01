@@ -1,0 +1,261 @@
+/* Dark Theme Styles */
+:root {
+    --dark-bg: #0a0a0a;
+    --dark-surface: #121212;
+    --dark-surface-2: #1a1a1a;
+    --dark-primary: #8B5CF6;
+    --dark-secondary: #06B6D4;
+    --dark-text: #FFFFFF;
+    --dark-text-secondary: rgba(255, 255, 255, 0.7);
+    --dark-border: #2a2a2a;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+nav {
+    background: var(--dark-surface);
+    border-right: 1px solid var(--dark-border);
+}
+
+.slide {
+    background-color: var(--dark-bg) !important;
+}
+
+.content {
+    background: var(--dark-surface);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+}
+
+.first-content, .second-content, .third-content, .fourth-content, .fifth-content {
+    background: var(--dark-surface) !important;
+}
+
+.right-image {
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.right-image img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: var(--dark-primary);
+    font-weight: 600;
+}
+
+p {
+    color: var(--dark-text-secondary);
+    line-height: 1.6;
+}
+
+.main-btn a {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.fb-btn a {
+    background-color: var(--dark-secondary);
+    color: var(--dark-text);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.main-btn a:hover, .fb-btn a:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+nav a, nav a:visited, nav a:active {
+    color: var(--dark-text-secondary);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-2);
+}
+
+nav a.active {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+}
+
+.item {
+    background: var(--dark-surface-2);
+    border-radius: 8px;
+    border: 1px solid var(--dark-border);
+    overflow: hidden;
+}
+
+.item .hover-effect {
+    background-color: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(4px);
+}
+
+.project-details {
+    background: var(--dark-surface-2);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-border);
+}
+
+/* Contact Form */
+#contact {
+    background-color: var(--dark-surface-2);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-border);
+}
+
+#contact .form-control {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    color: var(--dark-text);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+#contact .form-control:focus {
+    border-color: var(--dark-primary);
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+/* Social Links Section */
+.social-links {
+    background-color: var(--dark-surface-2);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-border);
+}
+
+.social-btn {
+    background-color: var(--dark-surface);
+    color: var(--dark-text) !important;
+    border: 1px solid var(--dark-border);
+}
+
+.social-btn:hover {
+    background-color: var(--dark-primary);
+    border-color: var(--dark-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-primary);
+    border-radius: 4px;
+}
+
+/* Animations */
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.main-btn a, .fb-btn a {
+    transition: opacity 0.3s ease;
+}
+
+/* Custom Styles for Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: var(--dark-text-secondary);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: var(--dark-primary);
+    position: absolute;
+    left: 0;
+}
+
+/* Education, Experience, and Certification Sections */
+.left-content h3 {
+    color: var(--dark-secondary);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.education-list, .experience-list, .skills-list, .cert-list {
+    margin-bottom: 20px;
+}
+
+.education-list li, .experience-list li, .skills-list li, .cert-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    margin: 30px 0;
+    text-align: left;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--dark-text);
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: var(--dark-primary);
+    width: 20px;
+    margin-top: 5px;
+}
+
+.contact-details a {
+    color: var(--dark-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--dark-primary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-details {
+        text-align: center;
+    }
+    
+    .contact-details p {
+        justify-content: center;
+    }
+    
+    .education-list li, .experience-list li, .skills-list li, .cert-list li {
+        font-size: 0.9em;
+    }
+} 
